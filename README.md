@@ -16,11 +16,33 @@ edition = "2018"
 [dependencies]
 task1 = "0.1.0"
 ```
+In `src/lib.rs` you can use like this:
+
+```
+pub mod Hotel{
+    pub mod floors{
+        pub fn room(){
+            println!("Please  access to the Room 5 at floor No. 4.");
+        }
+    }
+}
+
+```
 
 In `src/main.rs` you can use like this:
 
 ```
+//making module of lib.rs file
+mod lib;
+//using use keyward to access the lib.rs file
+use lib::Hotel::floors;
 
+
+fn main() {
+    crate::lib::Hotel::floors::room();// absolute path
+    //Use keyward
+    floors::room();
+}
 ```
 
 now `cargo run` for results
