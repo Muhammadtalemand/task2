@@ -1,0 +1,14 @@
+[package]
+name = "task2"
+version = "0.1.0"
+authors = ["muhammadtalemand <talemandkhokhar@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/Muhammadtalemand/task1"
+homepage = "https://github.com/Muhammadtalemand/task1.git"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = "Task 2 of assignment 7"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
